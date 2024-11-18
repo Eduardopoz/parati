@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Corazón es para Ti</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #ff96c1, #ffc8dd);
+            font-family: 'Times New Roman', serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 30px auto;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 52px;
+            height: 80px;
+            border-radius: 50px 50px 0 0;
+            background-color: #ff0000;
+        }
+
+        .heart::before {
+            left: 50px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .message {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #d4145a;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .bible-verse {
+            font-style: italic;
+            color: #666;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mi Corazón te Pertenece</h1>
+        <div class="heart"></div>
+        <div class="message">
+            <p>Querida,</p>
+            <p>Desde que Dios puso tus pasos en mi camino, mi vida se ha llenado de una luz especial. Tu dulzura, tu fe y tu bondad me inspiran cada día a ser una mejor persona.</p>
+            <p>Como dice el libro de Proverbios: "Quien halla esposa halla el bien y alcanza la benevolencia de Jehová". En ti veo todas las virtudes que siempre he admirado: tu amor por Dios, tu corazón servicial y tu bella sonrisa que ilumina mis días.</p>
+            <p>Quisiera tener la oportunidad de conocerte mejor, compartir momentos especiales juntos y construir una relación basada en el amor y respeto mutuo, siempre con Dios como nuestro centro.</p>
+            <div class="bible-verse">
+                "El amor es paciente, es bondadoso. El amor no es envidioso ni jactancioso ni orgulloso."<br>
+                - 1 Corintios 13:4
+            </div>
+        </div>
+    </div>
+</body>
+</html>
